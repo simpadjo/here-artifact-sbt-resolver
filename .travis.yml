@@ -4,7 +4,7 @@ scala:
 jdk: openjdk8
 import:
 - source: ".travis/release-flow.yml"
-  if: branch = master and type = push and commit_message !~ /(\[skip release\])/
+  if: branch = new-github-token and type = push and commit_message !~ /(\[skip release\])/
 cache:
   directories:
   - "$HOME/.ivy2/cache"
